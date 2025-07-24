@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cline 8X - Bloxd.io Pack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: url('bg.png') center/cover no-repeat;
+      background-color: #111;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      color: #00ffe1;
+      text-shadow: 0 0 25px #00ffe180;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 10px;
+      max-width: 700px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00ffe1, #00b7ff);
+      color: #000;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00ffe1;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #00ffe1;
+    }
+
+    .video-wrapper {
+      margin: 40px auto;
+      max-width: 720px;
+      width: 90%;
+      aspect-ratio: 16/9;
+      box-shadow: 0 0 25px #00ffe140;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      background: #0a0a0a;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    footer strong {
+      color: #00ffe1;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      .btn {
+        padding: 12px 30px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cline 8X</h1>
+    <p>The official Bloxd.io texture pack by BZ_bloxd. Super clean. Ultra fast. PvP ready.</p>
+    <a class="btn" href="Cline8X.zip" download>⬇ Download Cline 8X</a>
+  </header>
+
+  <!-- 🔥 Embedded YouTube Video -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/z2uUMxRnvPo" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    Built by <strong>Nerdy@Tech</strong> • For <strong>BZ_bloxd</strong> • Better than BloxdMan 😎 JK
+  </footer>
+
+</body>
+</html>
