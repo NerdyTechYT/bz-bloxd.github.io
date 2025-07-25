@@ -2,130 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cline 8X - Bloxd.io Pack</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BZ_Bloxd Texture Packs</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-      color: #fff;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      margin: 0;
+      background-color: #0a0a0a;
+      color: #00bfff;
+      font-family: sans-serif;
       text-align: center;
-      padding: 80px 20px 40px;
-      background: url('bg.png') center/cover no-repeat;
-      background-color: #111;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3.5rem;
-      color: #00ffe1;
-      text-shadow: 0 0 25px #00ffe180;
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #00bfff;
     }
 
-    p {
-      font-size: 1.2rem;
+    .pack {
+      display: flex;
+      align-items: center;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 15px 20px;
+      background: #111;
+      border: 2px solid #00bfff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00bfff55;
+      transition: transform 0.2s ease;
+    }
+
+    .pack:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px #00bfffaa;
+    }
+
+    .pack img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #00bfff;
+      margin-right: 30px;
+      flex-shrink: 0;
+    }
+
+    .pack-details {
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .pack-details h2 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+      color: #00bfff;
+    }
+
+    .pack-details p {
+      margin: 0 0 15px 0;
+      font-size: 16px;
       color: #ccc;
-      margin-top: 10px;
-      max-width: 700px;
     }
 
-    .btn {
-      margin-top: 30px;
-      padding: 15px 40px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      background: linear-gradient(90deg, #00ffe1, #00b7ff);
+    .download-button {
+      background-color: #00bfff;
       color: #000;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 0 15px #00ffe1;
-      transition: 0.3s ease;
+      font-size: 16px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
     }
 
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px #00ffe1;
-    }
-
-    .video-wrapper {
-      margin: 40px auto;
-      max-width: 720px;
-      width: 90%;
-      aspect-ratio: 16/9;
-      box-shadow: 0 0 25px #00ffe140;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+    .download-button:hover {
+      background-color: #0099cc;
     }
 
     footer {
       margin-top: 60px;
-      padding: 20px;
-      text-align: center;
-      background: #0a0a0a;
-      font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #222;
+      font-size: 14px;
+      color: #555;
     }
 
-    footer strong {
-      color: #00ffe1;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.4rem;
+    @media (max-width: 720px) {
+      .pack {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90vw;
       }
-
-      .btn {
-        padding: 12px 30px;
+      .pack img {
+        margin: 0 0 15px 0;
+        width: 100%;
+        height: auto;
       }
-
-      p {
-        font-size: 1rem;
+      .pack-details {
+        text-align: center;
+      }
+      .download-button {
+        font-size: 14px;
+        padding: 10px 20px;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Cline 8X</h1>
-    <p>The official Bloxd.io texture pack by BZ_bloxd. Super clean. Ultra fast. PvP ready.</p>
-    <a class="btn" href="Cline8X.zip" download>⬇ Download Cline 8X</a>
-  </header>
+  <h1>BZ_Bloxd's Texture Packs</h1>
 
-  <!-- 🔥 Embedded YouTube Video -->
-  <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/z2uUMxRnvPo" allowfullscreen></iframe>
+  <div class="pack">
+    <img src="cline8x.png" alt="Cline8X Preview" />
+    <div class="pack-details">
+      <h2>Cline8X</h2>
+      <p>Clean 8x resolution PvP pack with BZ_Bloxd style.</p>
+      <a href="cline8x.zip" class="download-button" download>Download</a>
+    </div>
   </div>
 
-  <footer>
-    Built by <strong>Nerdy@Tech</strong> • For <strong>BZ_bloxd</strong> • Better than BloxdMan 😎 JK
-  </footer>
+  <div class="pack">
+    <img src="pack500.png" alt="Pack 500 Subs Preview" />
+    <div class="pack-details">
+      <h2>Pack 500 Subs</h2>
+      <p>Special texture pack for 500 subscribers milestone!</p>
+      <a href="pack500.zip" class="download-button" download>Download</a>
+    </div>
+  </div>
+
+  <div class="pack">
+    <img src="pack1000.png" alt="Pack 1000 Subs Preview" />
+    <div class="pack-details">
+      <h2>Pack 1000 Subs</h2>
+      <p>Celebrate 1000 subscribers with this exclusive pack.</p>
+      <a href="pack1000.zip" class="download-button" download>Download</a>
+    </div>
+  </div>
+
+  <div class="pack">
+    <img src="pack1500a.png" alt="Pack 1500 Subs #1 Preview" />
+    <div class="pack-details">
+      <h2>Pack 1500 Subs #1</h2>
+      <p>First special pack for 1500 subscribers milestone!</p>
+      <a href="pack1500a.zip" class="download-button" download>Download</a>
+    </div>
+  </div>
+
+  <div class="pack">
+    <img src="pack1500b.png" alt="Pack 1500 Subs #2 Preview" />
+    <div class="pack-details">
+      <h2>Pack 1500 Subs #2</h2>
+      <p>Second pack for 1500 subscribers milestone.</p>
+      <a href="pack1500b.zip" class="download-button" download>Download</a>
+    </div>
+  </div>
+
+  <div class="pack">
+    <img src="pack1500c.png" alt="Pack 1500 Subs #3 Preview" />
+    <div class="pack-details">
+      <h2>Pack 1500 Subs #3</h2>
+      <p>Third pack for 1500 subscribers milestone.</p>
+      <a href="pack1500c.zip" class="download-button" download>Download</a>
+    </div>
+  </div>
+
+  <footer>© 2025 BZ_Bloxd | Made by Ali</footer>
 
 </body>
 </html>
